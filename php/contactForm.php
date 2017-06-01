@@ -6,8 +6,8 @@ if(isset($_POST['name']) && isset($_POST['contactEmail']) && isset($_POST['messa
 	$headers  = "MIME-Version: 1.1\n";
 	$headers .= "Content-type: text/plain; charset=UTF-8\n";
 	$headers .= "From: $email_remetente\r\n"; 
-	$headers .= "Return-To: noreply.webform@reconcavo.org.br\r\n"; 
-	$headers .= "Return-Path: noreply.webform@reconcavo.org.br\r\n";
+	$headers .= "Return-To: \r\n"; 
+	$headers .= "Return-Path: \r\n";
 
 	$to       = "";
 	$subject  = $_POST['title'];
