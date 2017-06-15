@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta content="http://www.antonioladeia.com" name="author" />
-	<meta content="" name="author" />
-	<script src='https://www.google.com/recaptcha/api.js'></script> <!-- TODO implementar -->
-	<title>Sistema externo de chamados</title>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <link rel="shortcut icon" href="http://www.reconcavo.org.br/wp-content/themes/Reconcavo/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+        <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="http://www.antonioladeia.com" name="author" />
+        <meta content="" name="author" />
+        <script src='https://www.google.com/recaptcha/api.js'></script> <!-- TODO implementar -->
+        <title>Sistema externo de chamados</title>
 
-</head>
-<body>
-
-
-<!-- Contact -->
-
-<section id="contact">
-
-<h3>Contato</h3>
-
-<form action="php/contactForm.php" id="contactForm" method="post">
-<div>
-	<input name="name" placeholder="Nome" type="text" />
-	<input name="contactEmail" placeholder="Email" type="text" />
-	<input name="title" placeholder="Título" type="text" />
-	<!--<div>
-	<div>
-	<div class="g-recaptcha" data-sitekey=""></div>
-	</div>
-	</div>-->
-	<textarea name="message" placeholder="Mensagem" rows="8"></textarea>
-	<button type="submit">Enviar</button>
-</div>
-</form>
-</section>
-
-</body>
+    </head>
+    <body>
+        <!-- Contact -->
+        <section id="contact" class="form-container">
+            <img src="images/logo.png" class="form-logo" >
+            
+            <form action="php/contactForm.php" id="contactForm" method="post">
+                <div>
+                    <input name="name" placeholder="Nome" type="text" class="form-input form-field" />
+                    <input name="contactEmail" placeholder="Email" type="text" class="form-input form-field" />
+                    <input name="title" placeholder="Título" type="text" class="form-input form-field" />
+                    <!--<div>
+                    <div>
+                    <div class="g-recaptcha" data-sitekey=""></div>
+                    </div>
+                    </div>-->
+                    <textarea name="message" placeholder="Mensagem" rows="8" class="form-input"></textarea>
+                    <button type="submit" class="form-button">Enviar</button>
+                </div>
+            </form>
+        </section>
+        
+        <footer>
+            <p class="footer-irt" >
+                <b>Instituto Recôncavo de Tecnologia</b> &nbsp;&nbsp;
+                Av. Tancredo Neves, Nº 805, Sala 901. &nbsp;&nbsp;
+                CEP.: 41820-021 – Salvador / Bahia. &nbsp;&nbsp;
+                Tel.: + 55 (71) 2101-1255
+            </p>
+            
+            <p class="footer-authors" >Página desenvolvida por:</p>
+            <p class="footer-authors" >
+                Antonio Ladeia &nbsp;&nbsp;
+                <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; (71) 9275-2361 &nbsp;&nbsp;
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; antonio@reconcavo.org.br &nbsp;&nbsp;
+                <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; (71) 9275-2361 &nbsp;&nbsp; | &nbsp;&nbsp;
+                Luis Paulo Oliveira &nbsp;&nbsp;
+                <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; (71) 2101-1220 &nbsp;&nbsp;
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; luis.oliveira@reconcavo.org.br  &nbsp;&nbsp;
+                <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; (71) 99160-5546 &nbsp;&nbsp;
+            </p>
+        </footer>
+    </body>
 </html>
