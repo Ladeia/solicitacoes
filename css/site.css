@@ -1,0 +1,126 @@
+/*
+    Elementos Gerais
+----------------------------------------------
+*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    animation: show-background 1s;
+    animation-timing-function: ease-out;
+    background-color: rgb(4, 4, 36);
+    font-family: "Droid Sans", "Arial", sans-serif;
+    position: relative;
+}
+
+form {
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+    background-position: top center;
+    background-repeat: no-repeat;   
+    background-size: 100% .1em;
+    margin-top: .1em;
+    padding-top: 2em;
+}
+
+textarea, input, button {
+    font-family: "Droid Sans", "Arial", sans-serif;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100%;
+    bottom: 0;
+    color: #FFF;    
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 5em;
+}
+
+footer p {
+    margin-left: 3em;
+}
+
+/*
+    Classes
+----------------------------------------------
+*/
+
+.form-container {
+    animation: show-form 1s;
+    animation-timing-function: ease-out;
+    background-color: rgba(1, 96, 222, 0.5);
+    border-radius: 1em;
+    box-sizing: border-box;
+    margin: 1em auto 3em auto;
+    padding: 3em;
+    padding-top: 1.5em;
+    width: 40em;
+}
+
+.form-logo {
+    margin-bottom: 1em;
+    margin-left: 13.5em;
+}
+
+.form-input {
+    border-radius: .5em;
+    display: block;
+    margin-bottom: 1em;
+    padding: .3em;
+    padding-left: 1em;
+    width: 100%;
+}
+
+.form-field {
+    height: 2em;
+}
+
+.form-button {
+    background-color: rgb(52, 136, 248);
+    border: none;
+    border-radius: .3em;
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+    height: 3em;
+    padding: 1em;
+    width: 15em;
+}
+
+.footer-irt {
+    font-size: .8em;
+    margin-left: 2.2em;
+}
+
+.footer-authors {
+    font-size: .6em;
+}
+
+/*
+    Keyframes
+----------------------------------------------
+*/
+
+@keyframes show-background {
+    0% {
+        background-color: #FFF;
+    }
+    
+    100% {
+        background-color: rgb(4, 4, 36);
+    }
+}
+
+@keyframes show-form {
+    0% {
+        margin-top: -100%;
+    }
+    
+    100% {
+        1em;
+    }
+}
